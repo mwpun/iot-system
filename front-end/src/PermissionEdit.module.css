@@ -1,0 +1,187 @@
+*{
+margin: 0;padding: 0;
+box-sizing: border-box;
+}
+/* โครงหลัก */
+.shell {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background: #f6f7fb;
+    color: #0f172a;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  }
+
+    /* กริดเลย์เอาต์ */
+  .body {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: calc(100dvh - 64px);
+  }
+
+table , th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.container {
+  width: 100%;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding: 16px;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+}
+
+.formWrapper {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.dataTable {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  height: 50%;
+  overflow:auto;
+}
+
+.selectRow{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.optionBtn{
+  display: flex;
+  list-style: none;
+  gap:20px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.optionBtn li{
+  cursor: pointer;
+  color: rgb(77, 137, 248);
+  text-decoration: underline;
+}
+
+.optionBtn li:hover{
+  opacity: 0.3;
+}
+
+.selectRow input{
+  width: 350px;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.selectRow select{
+  width: 350px;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.checkboxRow {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.saveBtn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancelBtn{
+  background: #da3535;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.saveBtn:hover {
+  background: #218838;
+}
+
+.cancelBtn:hover {
+  background: #d34e4e;
+}
+
+.tableWrapper {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.scrollContainer {
+  overflow-x: auto;
+  margin: 10px 0;
+  width: 100%; /* บังคับ container ให้เต็มจอ */
+}
+
+.permissionTable {
+  height: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* ให้ col ยืดตามเนื้อหา */
+  min-width: 100%;
+}
+
+.permissionTable th {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.permissionTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 150px; /* กัน column เล็กเกินไป */
+}
+
+.permissionTable input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+

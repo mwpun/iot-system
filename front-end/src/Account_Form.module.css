@@ -1,0 +1,64 @@
+.card {
+  background: #fff;
+  border: 1px solid #e3e6ef;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.formgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 13px;
+  color: #555;
+}
+
+.field input {
+  padding: 10px 12px;
+  border: 1px solid #e1e4ef;
+  border-radius: 10px;
+  outline: none;
+
+}
+
+.field select {
+  padding: 10px 12px;
+  border: 1px solid #e1e4ef;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.formactions {
+  display: flex;
+  gap: 10px;
+  grid-column: 1/-1;
+}
+
+/* ปุ่ม (เวอร์ชันของหน้า Form เท่านั้น) */
+.btn {
+  padding: 8px 10px;
+  border: 1px solid #e3e6ef;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f2f4f8;
+}
+
+.green {
+  background: #2dbd6f;
+  color: #fff;
+  border: none;
+}

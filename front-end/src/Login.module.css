@@ -1,0 +1,107 @@
+:root {
+    --red: #ef4444;
+    --red-soft: #fca5a5;
+    --text: #374151;
+    --muted: #9ca3af;
+    --card-bg: #ffffff;
+    --bg: #fafafa;
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+  }
+  
+  /* พื้นหลังเต็มจอ + จัดกลาง */
+  .screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    padding: 24px;
+  }
+  
+  /* การ์ดกลาง */
+  .card {
+    width: min(420px, 92vw);
+    background: var(--card-bg);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 36px 34px 30px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* โลโก้ */
+  .logoWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+  
+  .logo {
+    width: 64px;           /* ✅ ขนาดโลโก้ล็อก */
+    height: 64px;
+    object-fit: contain;
+  }
+  
+  .logoText {
+    font-size: 11px;
+    letter-spacing: .12em;
+    color: var(--muted);
+  }
+  
+  /* Title */
+  .title {
+    margin: 10px 0 20px;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--red-soft);
+  }
+  
+  /* ฟอร์ม */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .field { width: 100%; display: flex; justify-content: center; }
+  
+  .input {
+    width: 80%;
+    max-width: 320px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: 2px solid var(--red-soft);
+    background: #fff;
+    outline: none;
+    font-size: 16px;
+    color: var(--text);
+    text-align: left;
+    transition: box-shadow .2s ease, border-color .2s ease;
+  }
+  .input::placeholder { color: #9b9b9b; }
+  .input:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 4px rgba(239,68,68,.12);
+  }
+  
+  /* ปุ่ม */
+  .btn {
+    width: 80%;
+    max-width: 320px;
+    margin-top: 4px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #c4b5b5;
+    background: transparent;
+    color: #8b5e5e;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .1s ease, background .15s ease;
+  }
+  .btn:hover { background: #f5f5f5; }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: .6; cursor: not-allowed; }
+  

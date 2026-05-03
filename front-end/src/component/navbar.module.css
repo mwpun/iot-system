@@ -1,0 +1,87 @@
+
+
+.sidebar {
+  position: sticky;
+  top: 64px;
+  align-self: start;
+  height: calc(100dvh - 64px);
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px 14px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a li {
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li:hover {
+  background: #f3f4f6;
+}
+
+.active {
+  background: #f3f4f6;
+}
+
+.loading {
+  padding: 10px 10px;
+  color: #6b7280;
+}
+
+.logoutBtn{
+  background-color: #f56565;       /* สีพื้นหลังแดง */
+  color: white;                     /* ตัวอักษรสีขาว */
+  font-weight: bold;                /* ตัวหนา */
+  padding: 10px 20px;               /* ระยะห่างแนวตั้งและแนวนอน */
+  border: none;                     /* เอา border ออก */
+  border-radius: 8px;               /* ขอบโค้งมน */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* เงาลึก */
+  cursor: pointer;                  /* เปลี่ยน cursor เป็น pointer */
+  transition: background-color 0.3s, transform 0.2s; /* animation */
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.logoutBtn:hover {
+  background-color: #e53e3e; /* สีเข้มขึ้นเวลา hover */
+  transform: translateY(-2px); /* ยกปุ่มเล็กน้อยเวลา hover */
+}
+
+.logoutBtn:active {
+  transform: translateY(0);  /* กดปุ่มลง */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* เงาเล็กลงตอนกด */
+}
+
+@media (max-width: 680px) {
+  .sidebar {
+    position: absolute;
+    left: -110px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar:hover {
+    left: 0;
+  }
+}
